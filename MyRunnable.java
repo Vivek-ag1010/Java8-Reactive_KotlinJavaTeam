@@ -1,4 +1,4 @@
-package lambdaPractice;
+package com.lambda.section2;
 
 public class MyRunnable implements Runnable{
 	@Override
