@@ -63,15 +63,14 @@ public class MonoOperation {
 		Mono<String> m7 = Mono.just("Happy");
 		Mono<Integer> zipped3 = Mono.zip(m6, m7, (a, b) -> (a.length() + b.length()));
 		zipped3.subscribe(System.out::println);
+		
 
 //		//concatWith operation ex1
 //		
 //		Mono<String> m8 = Mono.just("Vivek");
 //		Mono<String> m9 = Mono.just("Happy");
 //		Mono<String> mergedMono = m8.concatWith(m9);
-
 //		mergedMono.subscribe(System.out::println);
 	}
 
 }
-
